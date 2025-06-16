@@ -38,6 +38,9 @@ section#login {
     overflow: hidden;
     box-shadow:0px 0px 10px rgba(0, 0, 0, 0.582) ;
 
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+
 }
 
 section#login > div#imagem {
@@ -50,6 +53,6 @@ section#login > div#imagem {
 section#login > div#forms {
     display: block;
     padding: 10px;
-    
+
 }
 
