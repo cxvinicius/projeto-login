@@ -12,6 +12,7 @@ Roxo: #5f2C82
     padding: 0px ;
     margin: 0px;
     box-sizing: border-box ;
+    text-align: justify;
 }
 
 body, html {
@@ -29,17 +30,17 @@ main {
 section#login {
     background-color: white;
     width: 250px;
-    height: 500px;
+    height: 515px;
     border-radius: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     overflow: hidden;
     box-shadow:0px 0px 10px rgba(0, 0, 0, 0.582) ;
 
     transition: width 0.3s, height 0.3s;
     transition-timing-function: ease;
+    transform: translate(-50%, -50%);
 
 }
 
@@ -53,6 +54,94 @@ section#login > div#imagem {
 section#login > div#forms {
     display: block;
     padding: 10px;
-
 }
 
+div#forms > h1  {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+div#forms > p {
+    font-size: .8em;
+}
+
+form > input[type=submit] {
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    height: 40px;
+    background-color:#49a09d;
+    color: white;
+    text-align: center;
+    margin-top: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form > input[type=submit]:hover {
+    background-color:#34706e;
+}
+
+
+form > a.botao {
+    display: block;
+    text-align: center;
+    font-size:1em;
+    width: 100%;
+    height:40px;
+    background-color:white;
+    border: 1px solid #34706e;
+    border-radius: 7px;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    margin-top: 5px;
+    padding-top: 5px;
+}
+
+
+form > a.botao:hover {
+   background-color:#71d8d5 ;
+}
+
+form > a.botao > i {
+    font-size: .8em;
+}
+
+form > div.campo {
+    background-color: #5f2C82;
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 5px;
+    margin: 8px 0px;
+}
+
+form label {
+    display:none; 
+}
+
+div.campo > i {
+    color: white;
+    /*background-color: black;*/
+    font-size: 2em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input {
+    background-color: #7ac0be;
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 95%;
+    border: none;
+    border-radius: 1px;
+    padding: 4px;
+    transform: translateY(-10px);
+}
+
+div.campo > input:focus-within {
+    background-color: white;
+    border: none;
+}
